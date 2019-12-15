@@ -10,9 +10,9 @@ function myFunction() {
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPad") != -1) || 
      (navigator.platform.indexOf("iPod") != -1))
-    window.open("maps://maps.google.com/maps/place/?q=place_id:ChIJIXnnoutnUjoRzLuVP2U-_ac");
+    window.location.replace("maps://maps.google.com/maps/place/?q=place_id:ChIJIXnnoutnUjoRzLuVP2U-_ac");
 else /* else use Google */
-    window.open("https://www.google.com/maps/place/?q=place_id:ChIJIXnnoutnUjoRzLuVP2U-_ac");
+    window.location.replace("https://www.google.com/maps/place/?q=place_id:ChIJIXnnoutnUjoRzLuVP2U-_ac");
 }
 </script>
 
