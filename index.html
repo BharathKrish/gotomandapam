@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<h1>Hello World!</h1>
+
+<script>
+function myFunction() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) || 
+     (navigator.platform.indexOf("iPad") != -1) || 
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("maps://maps.google.com/maps/place/?q=place_id:ChIJIXnnoutnUjoRzLuVP2U-_ac");
+else /* else use Google */
+    window.open("https://www.google.com/maps/place/?q=place_id:ChIJIXnnoutnUjoRzLuVP2U-_ac");
+}
+</script>
+
+</body>
+</html>
+ 
