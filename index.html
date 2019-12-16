@@ -8,10 +8,18 @@ function myFunction() {
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPad") != -1) || 
      (navigator.platform.indexOf("iPod") != -1))
-    // window.location.replace("comgooglemapsurl://goo.gl/maps/Z1WJD6zFnuLPxKTA8");
-    window.location.replace("comgooglemapsurl://goo.gl/maps/Z1WJD6zFnuLPxKTA8");
+	{
+		window.location.replace("comgooglemapsurl://goo.gl/maps/Z1WJD6zFnuLPxKTA8");
+	}	
+   	else if (navigator.platform.indexOf("Android") != -1 ) 
+   	{
+   		window.location.replace("https://www.google.com/maps/search/?api=1&query=Kanchi+Mahaswamy+Anantha+Mandapam&query_place_id=ChIJIXnnoutnUjoRzLuVP2U-_ac");
+   	}
 	else /* else use Google */
-	window.location.replace("https://www.google.com/maps/search/?api=1&query=Kanchi+Mahaswamy+Anantha+Mandapam&query_place_id=ChIJIXnnoutnUjoRzLuVP2U-_ac");
+	{
+		window.location.replace("https://www.google.com/maps/search/?api=1&query=Kanchi+Mahaswamy+Anantha+Mandapam&query_place_id=ChIJIXnnoutnUjoRzLuVP2U-_ac");
+	}
+	
 }
 </script>
 
